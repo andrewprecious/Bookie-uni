@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="../css/common.css" />
   </head>
   <body>
+    <!-- REMEMBER TO PUT AN ARROW THAT WOULD BRING YOU TO THE TOP WHEN YOUVE SCROLL TO THE DOWN -->
+
     <!-- header starts -->
     <header id="originalHeader">
       <div class="navTop">
@@ -32,13 +34,28 @@
 
           <!-- navRight starts -->
           <div class="navRight">
-            <!-- login  -->
-            <ul class="login">
-              <li class="dropDown">
-                <p>Login</p>
-                <span id="loginBtn"> &#9662;</span>
-              </li>
-            </ul>
+            <div class="loginWrapper">
+              <!-- login  -->
+              <ul class="login">
+                <li class="dropDown">
+                  <p>Login</p>
+                  <span id="loginBtn"> &#9662;</span>
+                </li>
+              </ul>
+              <!-- login dropdown menu starts -->
+              <div class="dropDownMenu" id="loginMenu">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                <div class="menu">
+                  <i class="fa fa-users" aria-hidden="true"></i>
+                  <a href="#">Staffs</a>
+                </div>
+                <div class="menu">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  <a href="#">Students</a>
+                </div>
+              </div>
+              <!-- login dropdown menu ends -->
+            </div>
             <!-- hamburger -->
             <div class="hamburger">
               <div></div>
@@ -107,16 +124,28 @@
 
         <!-- navRight -->
         <div class="navRightTwo">
-          <ul class="loginTwo">
-            <a class="dropDownTwo">
-              <p>Login</p>
-              <span class="dropdown-icon-two">&#9662;</span>
-            </a>
-            <li class="dropDownMenuTwo">
-              <a href="#">Staffs</a>
-              <a href="#">Students</a>
-            </li>
-          </ul>
+          <div class="loginWrapperTwo">
+            <!-- login  -->
+            <ul class="loginTwo">
+              <li class="dropDownTwo">
+                <p>Login</p>
+                <span id="loginBtnTwo"> &#9662;</span>
+              </li>
+            </ul>
+            <!-- login dropdown menu starts -->
+            <div class="dropDownMenuTwo" id="loginMenuTwo">
+              <i class="fa fa-caret-up" aria-hidden="true"></i>
+              <div class="menuTwo">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <a href="#">Staffs</a>
+              </div>
+              <div class="menuTwo">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="#">Students</a>
+              </div>
+            </div>
+            <!-- login dropdown menu ends -->
+          </div>
           <div class="hamburgerTwo" id="hamCloseBtn"></div>
         </div>
       </div>
@@ -173,12 +202,79 @@
     </div>
     <!-- logo ends -->
 
-    <!-- login dropdown menu starts -->
-    <li class="dropDownMenu">
-      <a href="#">Staffs</a>
-      <a href="#">Students</a>
-    </li>
-    <!-- login dropdown menu ends -->
+    <!-- HERO SECTION STARTS -->
+    <section class="hero-section">
+      <!-- images -->
+      <div class="hero-slider">
+        <!-- first slide -->
+        <div class="slide active">
+          <img src="./images/random.png" alt="Delicious food" />
+          <div class="overlay">
+            <h2>UniSA Time Capsule</h2>
+            <p>
+              The UniSA Time Capsule is an invitation to staff, students,
+              alumni, and the broader University community, to collectively
+              curate and preserve our University’s past, for the future.
+            </p>
+            <!-- this would take the user to the page  -->
+            <a href="#" class="btn">Learn more &rarr;</a>
+          </div>
+        </div>
+        <!-- Yoruba Food slide -->
+        <div class="slide">
+          <img src="./images/yoruba2.png" alt="Yoruba food" />
+          <div class="overlay">
+            <h2>MOD. FOREVER</h2>
+            <p>EXHIBITION OPEN NOW</p>
+            <!-- this would take the user to the page  -->
+            <a href="#" class="btn">PLAN YOUR VISIT &rarr;</a>
+          </div>
+        </div>
+        <!-- Chinese Food slide -->
+        <div class="slide">
+          <img src="./images/chinese2.png" alt="Chinese food" />
+          <div class="overlay">
+            <h2>UniSA’s Stretch Reconciliation Action Plan 2023–2025</h2>
+            <p>Our continued commitment to reconciliation</p>
+            <!-- this would take the user to the page eg chinese food page -->
+            <a href="#" class="btn">Read Now &rarr;</a>
+          </div>
+        </div>
+        <!-- Igbo Food slide -->
+        <div class="slide">
+          <img src="./images/igbo1.png" alt="Igbo food" />
+          <div class="overlay">
+            <h2>Discover Adelaide University</h2>
+            <p>
+              Discover Adelaide University Learn more about South Australia’s
+              new university for the future
+            </p>
+            <!-- This would take the user to the page, e.g., Igbo food page -->
+            <a href="#" class="btn">Learn more &rarr;</a>
+          </div>
+        </div>
+        <!-- European Food Section -->
+        <div class="slide">
+          <img src="./images/europeant1.png" alt="European food" />
+          <div class="overlay">
+            <p>Adelaide University</p>
+            <h2>Open Days</h2>
+            <p>JULY - AUGUST 2025</p>
+            <!-- This would take the user to the page, e.g., European food page -->
+            <a href="#" class="btn">Discover more &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <!-- arrows -->
+      <div class="btns">
+        <button class="leftBtn">&larr;</button>
+        <button class="rightBtn">&rarr;</button>
+      </div>
+    </section>
+
+    <!-- &rarr; -->
+
+    <!-- HERO SECTION ENDS -->
 
     <script src="./main.js"></script>
   </body>
