@@ -1,0 +1,92 @@
+collapse: Hides/shows the navbar content on small screens when toggled.
+navbar-collapse: Styles the collapsible part of the navbar.
+navbar-nav: Styles the <ul> as a horizontal navbar menu.
+me-auto: Adds automatic right margin, pushing following elements (like the search form) to the right.
+mb-2 mb-lg-0: Adds bottom margin on small screens (mb-2), removes it on large screens (mb-lg-0).
+nav-item: Styles each <li> as a navbar item.
+nav-link: Styles each <a> as a navbar link.
+active: Highlights the current/active link.
+dropdown: Enables dropdown behavior for the menu item.
+dropdown-toggle: Styles the link to show a dropdown arrow and enables dropdown toggle.
+dropdown-menu: Styles the dropdown menu.
+dropdown-item: Styles each item in the dropdown.
+d-flex: Makes the search form a flex container for horizontal alignment.
+form-control: Styles the input as a Bootstrap form field.
+btn btn-outline-light: Styles the button with a light outline.
+
+
+
+    <!-- reseacrh content -->
+    <div class="dropDownOverlay container" id="dropDownStudy">
+      <div class="dropDownContent">
+        <!-- top -->
+        <div class="top">
+          <!-- left -->
+          <div class="left">
+            <h1>
+              Research Options
+              <span class="closeDropDown">&times;</span>
+            </h1>
+          </div>
+          <!-- right -->
+          <button>APPLY NOW</button>
+        </div>
+        <!-- bottom -->
+        <div class="bottom">
+          <!-- courses -->
+          <div class="bottomStudy">
+            <h2>Study & Career Areas</h2>
+            <ul>
+              <li><a href="#">Faculty of Computing</a></li>
+              <li><a href="#">Faculty of Science</a></li>
+            </ul>
+          </div>
+
+          <!-- online -->
+          <div class="bottomStudy">
+            <h2>Bookie Uni Online</h2>
+            <ul>
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Postgraduate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About us content -->
+    <div class="dropDownOverlay container" id="dropDownStudy">
+      <div class="dropDownContent">
+        <!-- top -->
+        <div class="top">
+          <!-- left -->
+          <div class="left">
+            <h1>
+              About Options
+              <span class="closeDropDown">&times;</span>
+            </h1>
+          </div>
+          <!-- right -->
+          <button>APPLY NOW</button>
+        </div>
+        <!-- bottom -->
+        <div class="bottom">
+          <!-- courses -->
+          <div class="bottomStudy">
+            <h2>Study & Career Areas</h2>
+            <ul>
+              <li><a href="#">Faculty of Computing</a></li>
+              <li><a href="#">Faculty of Science</a></li>
+            </ul>
+          </div>
+
+          <!-- online -->
+          <div class="bottomStudy">
+            <h2>Bookie Uni Online</h2>
+            <ul>
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Postgraduate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>

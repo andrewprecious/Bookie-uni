@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+  width: 45%;
+  margin: 0 auto;
+}
+
+/* navtop style starts */
+.dropDownMenu {
+  display: none;
+}
+
+.navTop {
+  background-color: #0052a0;
+  padding: 15px 0px;
+  /* display: none; */
+}
+
+.navTopContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo style starts */
+.logoContainer {
+  background-color: white;
+  width: 10%;
+  /* margin-left: 40px; */
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border: 1px solid transparent;
+  border-bottom-right-radius: 100px;
+  position: absolute;
+  top: 0px;
+  left: 420px;
+}
+
+.logoContainer .logoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoContainer .logoContent p {
+  color: #0052a0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Smaller logo style when dropdown is shown */
+#logoContainerOriginal.small {
+  width: 8%;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  border-bottom-right-radius: 50px;
+  left: 450px;
+}
+
+#logoContainerOriginal.small .logoContent p {
+  font-size: 14px;
+}
+
+#logoContainerOriginal.small .logoContent img {
+  width: 40%; /* Or any smaller percentage */
+  height: 100px;
+}
+/* logo style ends */
+
+/* nav right starts */
+.navRight {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.login {
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.login li {
+  text-decoration: none;
+}
+
+.login .dropDown .dropdown-icon {
+  cursor: pointer;
+}
+
+.fa-bars {
+  color: white;
+}
+
+.dropDown #loginBtn {
+  cursor: pointer;
+}
+
+.dropDown {
+  display: flex;
+}
+
+/* hamburger style starts */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.hamburger div {
+  width: 22px;
+  height: 3px;
+  background-color: white;
+}
+/* hamburger style ends */
+
+/* nav right ends */
+
+/* nav bottom starts */
+.navBottom {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.dropDownBtn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropDownBtnTwo {
+  display: flex;
+}
+
+/* nav bottom ends */
+
+/* study dropDown starts  */
+.dropDownOverlay {
+  background-color: rgba(0, 26, 68, 0.95);
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; */
+}
+
+.dropDownOverlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropDownContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  width: 50%;
+  margin-top: 70px;
+}
+
+/* top starts */
+.dropDownContent .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.dropDownContent .top h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-right: 12px;
+}
+
+.dropDownContent .top .closeDropDown {
+  font-size: 40px;
+  color: rgb(229, 36, 36);
+  cursor: pointer;
+}
+
+.dropDownContent .top button {
+  background: none;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 14px 0px;
+  font-weight: 800;
+  font-size: 13px;
+  cursor: pointer;
+  width: 20%;
+  color: white;
+}
+
+.dropDownContent .top button:hover {
+  background-color: white;
+  color: #0052a0;
+}
+
+/* top ends */
+
+/* bottom starts */
+.dropDownContent .bottom {
+  display: flex;
+  gap: 60px;
+}
+
+.dropDownContent .bottomStudy {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.dropDownContent .bottomStudy h2 {
+  color: #798ea2;
+  font-family: "Roboto", sans-serif;
+}
+
+.dropDownContent .bottomStudy ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropDownContent .bottomStudy ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ================================================ THE OTHER HEADER STYLE STRATS =============================================================================== */
+
+/* navtop style starts */
+.dropDownMenuTwo {
+  display: none;
+}
+
+.header {
+  background-color: #0052a0;
+  padding: 5px 0px;
+  display: none;
+}
+
+.navTopContentTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav right starts */
+.navRightTwo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.loginTwo {
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.dropDownTwo {
+  display: flex;
+}
+
+.loginTwo li {
+  text-decoration: none;
+}
+
+.loginTwo .dropDownTwo .dropdown-icon-two {
+  cursor: pointer;
+}
+
+.fa-bars {
+  color: white;
+}
+
+/* hamburger style starts */
+/* When active, change to "X" */
+.hamburgerTwo {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hamburgerTwo div {
+  display: none;
+}
+
+.hamburgerTwo::before {
+  content: "×";
+}
+/* hamburger style ends */
+
+/* nav right ends */
+
+/* nav bottom starts */
+.navBottomTwo {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  list-style: none;
+}
+
+.dropDownBtnTwo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* nav bottom ends */
+
+/* ================================================ THE OTHER HEADER STYLE ENDS =============================================================================== */

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookie university</title>
+    <!-- link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link to font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+
+    <!-- link to common css -->
+    <link rel="stylesheet" href="../css/common.css" />
+  </head>
+  <body>
+    <!-- header starts -->
+    <header id="originalHeader">
+      <div class="navTop">
+        <div class="navTopContent container">
+          <!-- navLeft starts -->
+          <div class="navLeft">University</div>
+          <!-- navLeft ends -->
+
+          <!-- navRight starts -->
+          <div class="navRight">
+            <!-- login  -->
+            <ul class="login">
+              <li class="dropDown">
+                <p>Login</p>
+                <span id="loginBtn"> &#9662;</span>
+              </li>
+            </ul>
+            <!-- hamburger -->
+            <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <!-- navRight ends -->
+        </div>
+      </div>
+
+      <ul class="navBottom" id="navBottomOriginal">
+        <!-- study -->
+        <li class="navItem dropDownParent">
+          <button class="dropDownBtn">
+            Study
+            <span class="dropdown-icon" id="openStudyDropdown">&#9662;</span>
+          </button>
+        </li>
+        <!-- research -->
+        <li class="navItem dropDownParent">
+          <button class="dropDownBtn">
+            Research
+            <span class="dropdown-icon">&#9662;</span>
+          </button>
+        </li>
+        <!-- About -->
+        <li class="navItem dropDownParent">
+          <button class="dropDownBtn">
+            About
+            <span class="dropdown-icon">&#9662;</span>
+          </button>
+        </li>
+      </ul>
+    </header>
+    <!-- header ends -->
+
+    <!-- other header starts -->
+
+    <header class="header" id="alternateHeader">
+      <div class="navTopContentTwo container">
+        <!-- navLeft -->
+        <div class="navLeftTwo">University</div>
+
+        <!-- navBottom moved here -->
+        <ul class="navBottomTwo">
+          <li class="navItemTwo dropDownParentTwo">
+            <button class="dropDownBtnTwo" id="studyBtn">
+              Study
+              <span class="dropdown-icon-two">&#9662;</span>
+            </button>
+          </li>
+          <li class="navItemTwo dropDownParentTwo">
+            <button class="dropDownBtnTwo">
+              Research
+              <span class="dropdown-icon-two">&#9662;</span>
+            </button>
+          </li>
+          <li class="navItem dropDownParentTwo">
+            <button class="dropDownBtnTwo">
+              About
+              <span class="dropdown-icon-two">&#9662;</span>
+            </button>
+          </li>
+        </ul>
+
+        <!-- navRight -->
+        <div class="navRightTwo">
+          <ul class="loginTwo">
+            <a class="dropDownTwo">
+              <p>Login</p>
+              <span class="dropdown-icon-two">&#9662;</span>
+            </a>
+            <li class="dropDownMenuTwo">
+              <a href="#">Staffs</a>
+              <a href="#">Students</a>
+            </li>
+          </ul>
+          <div class="hamburgerTwo" id="hamCloseBtn"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- other header starts  -->
+
+    <!-- Dropdown contents overlay starts -->
+    <!-- Study content -->
+    <div class="dropDownOverlay" id="dropDownStudy">
+      <div class="dropDownContent">
+        <!-- top -->
+        <div class="top">
+          <!-- left -->
+          <div class="left">
+            <h1>
+              Study Options
+              <span class="closeDropDown" id="closeStudyDropdown">&times;</span>
+            </h1>
+          </div>
+          <!-- right -->
+          <button>APPLY NOW</button>
+        </div>
+        <!-- bottom -->
+        <div class="bottom">
+          <!-- courses -->
+          <div class="bottomStudy">
+            <h2>Study & Career Areas</h2>
+            <ul>
+              <li><a href="#">Faculty of Computing</a></li>
+              <li><a href="#">Faculty of Science</a></li>
+            </ul>
+          </div>
+
+          <!-- online -->
+          <div class="bottomStudy">
+            <h2>Bookie Uni Online</h2>
+            <ul>
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Postgraduate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dropdown contents overlay ends-->
+
+    <!-- logo starts -->
+    <div class="logoContainer" id="logoContainerOriginal">
+      <div class="logoContent">
+        <img src="../images/logo-removebg-preview.png" alt="BookieUni Logo" />
+        <p>Bookie University</p>
+      </div>
+    </div>
+    <!-- logo ends -->
+
+    <!-- login dropdown menu starts -->
+    <li class="dropDownMenu">
+      <a href="#">Staffs</a>
+      <a href="#">Students</a>
+    </li>
+    <!-- login dropdown menu ends -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+
+<!-- third navLink -->
+<!-- <li class="navItem dropDownParent">
+            <button class="dropDownBtn">
+              About
+              <span class="dropdown-icon">&#9662;</span>
+            </button>
+          </li> -->
