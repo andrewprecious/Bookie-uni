@@ -10,54 +10,11 @@
   margin: 0 auto;
 }
 
-/* navtop style starts */
-.loginWrapper {
-  position: relative;
-}
-
-.dropDownMenu {
-  display: none;
-  /* margin-bottom: 70px;
-  margin-left: 100px; */
+body {
   background-color: #798ea2;
-  width: 100px;
-  padding: 15px 0px;
-  display: flex;
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  position: absolute;
-  top: 43px;
-  right: -12px;
 }
 
-.dropDownMenu .menu {
-  display: flex;
-  gap: 10px;
-  margin-left: 10px;
-}
-
-.dropDownMenu .menu a {
-  text-decoration: none;
-  color: #0052a0;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-}
-
-.dropDownMenu .menu i {
-  color: #0052a0;
-}
-
-.dropDownMenu .fa-caret-up {
-  color: #0052a0;
-  font-size: 30px;
-  position: absolute;
-  bottom: 65px;
-  left: 42px;
-}
-
-/* dropdown mwnu ends */
-
+/* navtop style starts */
 .navTop {
   background-color: #0052a0;
   padding: 15px 0px;
@@ -69,6 +26,8 @@
   justify-content: space-between;
   align-items: center;
 }
+/* navTop ends */
+
 /* total div starts */
 .totalDiv {
   display: flex;
@@ -80,13 +39,13 @@
   background-color: white;
   width: 10%;
   /* margin-left: 40px; */
-  /* padding-top: 20px;
+  padding-top: 20px;
   padding-bottom: 30px;
   border: 1px solid transparent;
   border-bottom-right-radius: 100px;
   position: absolute;
   top: 0px;
-  left: 420px; */
+  left: 400px;
 }
 
 .logoContainer .logoContent {
@@ -127,6 +86,7 @@
   align-items: center;
 }
 
+/* login starts */
 .login {
   color: white;
   font-size: 15px;
@@ -153,6 +113,52 @@
   display: flex;
 }
 
+.loginWrapper {
+  position: relative;
+}
+
+/* dropdown menu starts */
+.dropDownMenu {
+  display: none;
+  background-color: wheat;
+  width: 100px;
+  padding: 15px 0px;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 43px;
+  right: -12px;
+}
+
+.dropDownMenu .menu {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.dropDownMenu .menu a {
+  text-decoration: none;
+  color: #0052a0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.dropDownMenu .menu i {
+  color: #0052a0;
+}
+
+.dropDownMenu .fa-caret-up {
+  color: #0052a0;
+  font-size: 30px;
+  position: absolute;
+  bottom: 65px;
+  left: 42px;
+}
+
+/* dropdown menu ends */
+
 /* hamburger style starts */
 .hamburger {
   display: flex;
@@ -166,35 +172,48 @@
   background-color: white;
 }
 /* hamburger style ends */
-
-/* nav right ends */
+/* navRight ends */
 
 /* nav bottom starts */
 .navBottom {
   display: flex;
   gap: 100px;
-  border: 1px solid red;
-  /* justify-content: center; */
+  /* border: 1px solid red; */
   list-style: none;
   margin-top: 40px;
 }
 
 .dropDownBtn {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 22px;
   text-transform: uppercase;
   text-decoration: none;
   background: none;
   border: none;
   cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropDownBtn h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #0052a0;
+  text-decoration-thickness: 3px;
+}
+
+.dropDownBtn .fa-chevron-down {
+  color: #79aedb;
+  font-size: 15px;
+}
+
+.dropDownBtn .fa-chevron-down:hover {
+  color: white;
 }
 
 .dropDownBtnTwo {
   display: flex;
 }
-
-/* nav bottom ends */
 
 /* study dropDown starts  */
 .dropDownOverlay {
@@ -225,7 +244,7 @@
   gap: 30px;
   margin-top: 20px;
   width: 50%;
-  margin-top: 70px;
+  margin-top: 130px;
 }
 
 /* top starts */
@@ -299,6 +318,7 @@
   font-size: 15px;
   font-family: "Roboto", sans-serif;
 }
+/* nav bottom ends */
 
 /* ================================================ THE OTHER HEADER STYLE STRATS =============================================================================== */
 
@@ -318,6 +338,39 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* logo style starts */
+.logoContainerTwo {
+  width: 8%;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  border-bottom-right-radius: 50px;
+  background-color: white;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 0px;
+  left: 470px;
+}
+
+.logoContainerTwo .logoContentTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoContainerTwo .logoContentTwo p {
+  color: #0052a0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.logoContentTwo img {
+  width: 40%;
+  height: 100px;
+}
+
+/* logo style ends */
 
 /* nav right starts */
 .navRightTwo {
@@ -354,14 +407,12 @@
 }
 
 .dropDownMenuTwo {
-  display: none;
-  /* margin-bottom: 70px;
-  margin-left: 100px; */
   background-color: #798ea2;
   width: 100px;
   padding: 15px 0px;
   display: flex;
   flex-direction: column;
+  display: none;
   gap: 10px;
   position: absolute;
   top: 41px;
@@ -431,13 +482,30 @@
 
 .dropDownBtnTwo {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 22px;
   text-transform: uppercase;
   text-decoration: none;
   background: none;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.dropDownBtnTwo h2:hover {
+  text-decoration: underline;
+  text-decoration-color: #538bc0;
+  text-decoration-thickness: 3px;
+}
+
+.dropDownBtnTwo .fa-chevron-down {
+  color: #79aedb;
+  font-size: 15px;
+}
+
+.dropDownBtnTwo .fa-chevron-down:hover {
+  color: white;
 }
 
 /* nav bottom ends */
